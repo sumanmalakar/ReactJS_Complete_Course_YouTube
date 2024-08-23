@@ -6,9 +6,11 @@
 body {
   background-color: black;
   color: white;
+  padding: 0;
+  margin: 0;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -19,7 +21,8 @@ body::-webkit-scrollbar{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 50px;
 }
-.item{
+
+.item {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -28,7 +31,7 @@ body::-webkit-scrollbar{
   align-items: center;
 }
 
-.item img{
+.item img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -37,6 +40,6 @@ body::-webkit-scrollbar{
   transition: transform 0.5s ease;
 }
 
-.item img:hover{
+.item img:hover {
   transform: scale(1.1);
 }

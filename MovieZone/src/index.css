@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hover_effect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 310px;
+  overflow: hidden;
+  transition: 0.7s ease;
+  /* background-color: gray; */
+  /* margin: 10px; */
+}
+
+.hover_effect img {
+  width: 100%;
+
+  transition: transform 0.7s ease;
+  transform: translateZ(0)
+}
+
+.hover_effect:hover img {
+  transform: scale(1.1) translateZ(50px);
+}
+
+button {
+  font-weight: bolder !important;
+}
+
+div {
+  margin: 10px;
+}
